@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaPagado — Aviso de transferencias</title>
+<meta name="description" content="TaPagado avisa en voz alta, en el celular o la tablet del local, cada transferencia que llega a la cuenta del dueño. Política de privacidad.">
+<style>
+  :root { --bg:#F3F7F4; --card:#FFFFFF; --text:#13221A; --muted:#5A6B61; --line:#DDE7E0; --brand:#1E9E4A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0C1510; --card:#16231B; --text:#EEF5F0; --muted:#9BB0A3; --line:#28392F; --brand:#4CC97A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  header a { display:flex; align-items:center; gap:12px; color:inherit; text-decoration:none; }
+  .logo { width:64px; height:64px; border-radius:16px; background:linear-gradient(135deg,#1E9E4A,#13A3A0); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:26px; }
+  h1 { font-size:34px; margin:0; letter-spacing:-0.8px; }
+  .hero { background:linear-gradient(135deg,#178A41,#1E9E4A 50%,#13A3A0); color:#fff; border-radius:28px; padding:28px 24px; margin:20px 0 24px; }
+  .hero h2 { font-size:26px; line-height:1.2; margin:0 0 8px; letter-spacing:-0.5px; }
+  .hero p { color:rgba(255,255,255,0.93); margin:0; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:28px; }
+  .feature { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px; }
+  .feature strong { display:block; margin-bottom:4px; }
+  .feature span { color:var(--muted); font-size:14px; }
+  .soon { display:inline-block; margin-top:16px; padding:10px 18px; border-radius:999px; background:#fff; color:#178A41; font-weight:700; font-size:14px; }
+  h2 { font-size:19px; margin:28px 0 8px; }
+  .muted { color:var(--muted); font-size:14px; }
+  nav { display:flex; gap:8px; margin:20px 0; flex-wrap:wrap; }
+  nav a { padding:8px 14px; border-radius:999px; background:var(--card); border:1px solid var(--line); color:var(--text); text-decoration:none; font-weight:600; font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:8px 20px 20px; margin-bottom:24px; }
+  ul { padding-left:20px; }
+  a { color:var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <header><a href="./"><div class="logo" aria-hidden="true">$</div><h1>TaPagado</h1></a></header>
+
+  <div class="hero">
+    <h2>Sabe al instante que te pagaron</h2>
+    <p>TaPagado anuncia en voz alta, en el celular o la tablet de tu local, cada transferencia que llega a tu cuenta. Tus trabajadores confirman el pago sin ver tu celular ni tu banco.</p>
+    <span class="soon">Pronto en Google Play</span>
+  </div>
+
+  <div class="features">
+    <div class="feature"><strong>Aviso por voz</strong><span>"Recibiste 5.000 pesos de Juan Pérez en Mercado Pago".</span></div>
+    <div class="feature"><strong>Dueño y local</strong><span>Tu celular recibe el aviso del banco y lo envía a la tablet del local en segundos.</span></div>
+    <div class="feature"><strong>Sin claves del banco</strong><span>No se conecta a tu banco ni pide tus claves: solo lee el aviso que tu banco ya te envía.</span></div>
+    <div class="feature"><strong>Contra comprobantes falsos</strong><span>Solo vale el aviso de la app oficial del banco, no una captura de pantalla.</span></div>
+  </div>
+
+  <p class="muted">Contacto: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a> · <a href="terminos.html">Términos de uso</a></p>
+  <p class="muted" style="margin-top:28px">Política de privacidad · Privacy policy</p>
+  <nav><a href="#es">Español</a><a href="#en">English</a></nav>
+
+  <section id="es" lang="es">
+    <h2>Política de privacidad</h2>
+    <p class="muted">Vigente desde: 19 de noviembre de 2026 · <a href="terminos.html#es">Términos de uso</a></p>
+    <p>TaPagado es una aplicación para Android que avisa en voz alta las transferencias que recibe un negocio. Responsable: Christopher Toledo, Chile. Contacto: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>. Si hay diferencias entre idiomas, vale la versión en español.</p>
+    <p>La app tiene dos modos. El <strong>modo Dueño</strong> se instala en el celular donde está la app del banco. El <strong>modo Trabajador</strong> se instala en el celular o tablet del local y recibe los pagos del dueño.</p>
+
+    <h2>El permiso de acceso a notificaciones</h2>
+    <p>En el modo Dueño, TaPagado pide el permiso de Android "Acceso a notificaciones". Es la función principal de la app: sin él no puede saber que llegó una transferencia.</p>
+    <ul>
+      <li>Android le muestra a TaPagado las notificaciones que llegan al celular, pero la app <strong>solo guarda las de las aplicaciones oficiales de los bancos y billeteras que tú eliges</strong> en la configuración.</li>
+      <li>Las notificaciones de cualquier otra app (WhatsApp, mensajes, correo, redes sociales, etc.) <strong>no se leen ni se guardan</strong>. Para ayudarte a encontrar bancos que falten, la app solo anota en el propio celular el nombre de las apps que enviaron avisos y la hora, nunca su contenido.</li>
+      <li>Solo se envían a internet los avisos de bancos que indican que <strong>recibiste dinero</strong>, y solo si conectaste un trabajador.</li>
+      <li>Puedes quitar este permiso cuando quieras en Ajustes de Android → Notificaciones → Acceso a notificaciones.</li>
+    </ul>
+
+    <h2>Qué datos se guardan en el celular</h2>
+    <p>En el celular del dueño: los últimos avisos de los bancos elegidos (hasta 300), los bancos elegidos, el nombre del negocio, tus ajustes de voz y la lista de apps que enviaron avisos (solo nombre y hora). En el equipo del trabajador: el código del negocio y los ajustes de voz. Todo esto se borra al desinstalar la app, al borrar sus datos desde Ajustes de Android, o con el botón "Cambiar de modo".</p>
+
+    <h2>Qué datos se suben a la nube</h2>
+    <p>Para que la tablet del local reciba los pagos, TaPagado usa <strong>Google Firebase</strong> (base de datos Firestore e inicio de sesión anónimo). No te pedimos nombre real, correo ni teléfono para usarla. Se guardan:</p>
+    <ul>
+      <li><strong>Negocio:</strong> un código de 6 caracteres, el nombre que le pusiste, un identificador anónimo del dueño, la hora del último aviso del celular del dueño y la del último pago.</li>
+      <li><strong>Trabajadores:</strong> el nombre que escribe cada trabajador, su identificador anónimo y si el dueño lo aprobó.</li>
+      <li><strong>Pagos recibidos:</strong> el banco o billetera, el título y el texto del aviso tal como lo escribe el banco (puede incluir el <strong>monto</strong>, el <strong>nombre de quien pagó</strong> y el banco de origen), y las horas en que el banco lo publicó, la app lo recibió y se subió.</li>
+    </ul>
+    <p>Solo el dueño puede subir pagos, y solo los trabajadores que el dueño aprobó pueden verlos. Nadie puede modificarlos. TaPagado <strong>no</strong> recibe ni guarda claves bancarias, números de tarjeta, saldos ni movimientos de tu cuenta: solo lo que dice el aviso.</p>
+    <p>Además, la app descarga de Firebase la lista actualizada de bancos y la forma en que cada uno escribe sus avisos, para seguir funcionando si un banco cambia sus textos.</p>
+    <p>TaPagado no vende tus datos ni los usa para publicidad.</p>
+
+    <h2>Para qué se usan los datos y con qué base</h2>
+    <p>Los datos se usan solo para prestar el servicio que pediste: avisar los pagos del negocio en tu celular y en los equipos de tus trabajadores aprobados. La base es la ejecución del servicio que solicitaste. El dueño del negocio decide a quién aprueba y responde por informar a sus trabajadores y clientes que usa la app.</p>
+
+    <h2>Dónde se tratan y cuánto tiempo</h2>
+    <p>Los datos se guardan en servidores de Google Cloud en Santiago de Chile (región southamerica-west1). Google actúa como proveedor de TaPagado según sus <a href="https://firebase.google.com/terms/data-processing-terms">condiciones de tratamiento de datos</a> y su <a href="https://policies.google.com/privacy">política de privacidad</a>. Los pagos y los datos del negocio se conservan mientras el negocio use la app, o hasta que pidas borrarlos.</p>
+
+    <h2>Cómo pedir que se borren tus datos</h2>
+    <p>Para borrar lo que está en tu celular: toca "Cambiar de modo" en la app, borra sus datos desde Ajustes de Android o desinstálala. Para quitar a un trabajador, el dueño toca "Quitar" junto a su nombre.</p>
+    <p>Para borrar el negocio completo y todos sus pagos de la nube, escribe a <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a> con el asunto "Borrar mis datos" e indica el código del negocio (aparece en la pantalla del dueño). Los borraremos en un máximo de 30 días y te lo confirmaremos.</p>
+
+    <h2>Otros permisos</h2>
+    <p><strong>Internet:</strong> para enviar y recibir pagos con Firebase. <strong>Notificaciones de la app y servicio en primer plano:</strong> para mostrar el aviso fijo "TaPagado activo", que evita que el sistema cierre la app y se pierdan avisos. <strong>Mantener el equipo activo:</strong> para que la voz termine de hablar y la pantalla del local no se apague mientras la app está abierta. TaPagado no usa la cámara, el micrófono, tu ubicación ni tus contactos.</p>
+
+    <h2>Tus derechos</h2>
+    <p>Según la ley chilena y la de tu país, puedes pedir acceso a tus datos, corregirlos, borrarlos, oponerte a su uso y pedir su portabilidad. Escribe a <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>; respondemos en un máximo de 30 días. Como no pedimos tu nombre ni tu correo, te pediremos el código del negocio para ubicar tus datos.</p>
+
+    <h2>Menores de edad</h2>
+    <p>TaPagado es una herramienta para negocios y no está dirigida a menores de 18 años.</p>
+
+    <h2>Seguridad</h2>
+    <p>Las conexiones con Firebase van cifradas. Las reglas de la base de datos impiden que alguien que no sea el dueño o un trabajador aprobado vea los pagos de un negocio.</p>
+
+    <h2>Cambios</h2>
+    <p>Si esta política cambia, la versión actualizada se publicará en esta misma página con su nueva fecha de vigencia.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Privacy policy</h2>
+    <p class="muted">Effective: November 19, 2026 · <a href="terminos.html#en">Terms of use</a></p>
+    <p>TaPagado is an Android app that announces out loud the bank transfers a business receives. Controller: Christopher Toledo, Chile. Contact: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>. If the languages differ, the Spanish version prevails.</p>
+    <p>The app has two modes. <strong>Owner mode</strong> runs on the phone that has the bank app. <strong>Worker mode</strong> runs on the shop's phone or tablet and receives the owner's payments.</p>
+
+    <h2>Notification access permission</h2>
+    <p>In Owner mode, TaPagado asks for Android's "Notification access" permission. It is the app's core feature: without it the app cannot know a transfer arrived.</p>
+    <ul>
+      <li>Android shows TaPagado the notifications that arrive on the phone, but the app <strong>only keeps those from the official apps of the banks and wallets you select</strong>.</li>
+      <li>Notifications from any other app (WhatsApp, messages, email, social media, etc.) <strong>are not read or stored</strong>. To help find missing banks, the app only records on the phone the name of the apps that sent notifications and the time, never their content.</li>
+      <li>Only bank notifications saying you <strong>received money</strong> are sent to the internet, and only if you connected a worker.</li>
+      <li>You can revoke this permission at any time in Android Settings → Notifications → Notification access.</li>
+    </ul>
+
+    <h2>What is stored on the device</h2>
+    <p>On the owner's phone: the latest notifications from the selected banks (up to 300), the selected banks, the business name, voice settings and the list of apps that sent notifications (name and time only). On the worker's device: the business code and voice settings. This is deleted when you uninstall the app, clear its data in Android Settings, or tap "Cambiar de modo" (Change mode).</p>
+
+    <h2>What is uploaded to the cloud</h2>
+    <p>So the shop's tablet receives payments, TaPagado uses <strong>Google Firebase</strong> (Firestore database and anonymous sign-in). We do not ask for your real name, email or phone number. Stored data:</p>
+    <ul>
+      <li><strong>Business:</strong> a 6-character code, the name you gave it, an anonymous owner ID, and the time of the owner phone's last check-in and of the last payment.</li>
+      <li><strong>Workers:</strong> the name each worker types, their anonymous ID and whether the owner approved them.</li>
+      <li><strong>Received payments:</strong> the bank or wallet, the notification title and text as written by the bank (it may include the <strong>amount</strong>, the <strong>payer's name</strong> and the originating bank), and the times the bank posted it, the app received it and it was uploaded.</li>
+    </ul>
+    <p>Only the owner can upload payments and only workers the owner approved can see them. Nobody can edit them. TaPagado does <strong>not</strong> receive or store bank passwords, card numbers, balances or account statements: only what the notification says.</p>
+    <p>The app also downloads from Firebase the updated list of banks and how each one words its notifications.</p>
+    <p>TaPagado does not sell your data or use it for advertising.</p>
+
+    <h2>Purpose and legal basis</h2>
+    <p>Data is used only to provide the service you requested: announcing the business's payments on your phone and your approved workers' devices. The business owner decides whom to approve and is responsible for informing workers and customers that the app is used.</p>
+
+    <h2>Where and for how long</h2>
+    <p>Data is stored on Google Cloud servers in Santiago, Chile (southamerica-west1). Google acts as TaPagado's processor under its <a href="https://firebase.google.com/terms/data-processing-terms">data processing terms</a>. Payments and business data are kept while the business uses the app, or until you ask us to delete them.</p>
+
+    <h2>How to request deletion</h2>
+    <p>To delete what is on your device: tap "Cambiar de modo", clear the app's data in Android Settings, or uninstall it. The owner can remove a worker with "Quitar". To delete the whole business and all its payments from the cloud, email <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a> with the subject "Delete my data" and include the business code. We will delete it within 30 days and confirm.</p>
+
+    <h2>Other permissions</h2>
+    <p><strong>Internet:</strong> to send and receive payments through Firebase. <strong>App notifications and foreground service:</strong> for the persistent "TaPagado activo" notice that keeps the system from closing the app. <strong>Keep device awake:</strong> so the voice finishes speaking and the shop screen stays on while the app is open. TaPagado does not use the camera, microphone, location or contacts.</p>
+
+    <h2>Your rights</h2>
+    <p>You may request access, correction, deletion, objection and portability by emailing <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>; we reply within 30 days and will ask for the business code to locate your data.</p>
+
+    <h2>Children</h2>
+    <p>TaPagado is a business tool and is not directed at anyone under 18.</p>
+
+    <h2>Security</h2>
+    <p>Connections to Firebase are encrypted. Database rules prevent anyone other than the owner or an approved worker from seeing a business's payments.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be published on this page with its new effective date.</p>
+  </section>
+</main>
+</body>
+</html>

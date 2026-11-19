@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaPagado — Términos de uso</title>
+<meta name="description" content="Términos de uso de TaPagado, la app que avisa en voz alta las transferencias recibidas.">
+<style>
+  :root { --bg:#F3F7F4; --card:#FFFFFF; --text:#13221A; --muted:#5A6B61; --line:#DDE7E0; --brand:#1E9E4A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0C1510; --card:#16231B; --text:#EEF5F0; --muted:#9BB0A3; --line:#28392F; --brand:#4CC97A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  header a { display:flex; align-items:center; gap:12px; color:inherit; text-decoration:none; }
+  .logo { width:64px; height:64px; border-radius:16px; background:linear-gradient(135deg,#1E9E4A,#13A3A0); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:26px; }
+  h1 { font-size:34px; margin:0; letter-spacing:-0.8px; }
+  .hero { background:linear-gradient(135deg,#178A41,#1E9E4A 50%,#13A3A0); color:#fff; border-radius:28px; padding:28px 24px; margin:20px 0 24px; }
+  .hero h2 { font-size:26px; line-height:1.2; margin:0 0 8px; letter-spacing:-0.5px; }
+  .hero p { color:rgba(255,255,255,0.93); margin:0; }
+  .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:28px; }
+  .feature { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:16px; }
+  .feature strong { display:block; margin-bottom:4px; }
+  .feature span { color:var(--muted); font-size:14px; }
+  .soon { display:inline-block; margin-top:16px; padding:10px 18px; border-radius:999px; background:#fff; color:#178A41; font-weight:700; font-size:14px; }
+  h2 { font-size:19px; margin:28px 0 8px; }
+  .muted { color:var(--muted); font-size:14px; }
+  nav { display:flex; gap:8px; margin:20px 0; flex-wrap:wrap; }
+  nav a { padding:8px 14px; border-radius:999px; background:var(--card); border:1px solid var(--line); color:var(--text); text-decoration:none; font-weight:600; font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:8px 20px 20px; margin-bottom:24px; }
+  ul { padding-left:20px; }
+  a { color:var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <header><a href="./"><div class="logo" aria-hidden="true">$</div><h1>TaPagado</h1></a></header>
+
+  <p class="muted" style="margin-top:20px">Términos de uso · Terms of use</p>
+  <nav><a href="#es">Español</a><a href="#en">English</a><a href="./">Política de privacidad</a></nav>
+
+  <section id="es" lang="es">
+    <h2>Términos de uso</h2>
+    <p class="muted">Vigentes desde: 19 de noviembre de 2026 · <a href="./#es">Política de privacidad</a></p>
+    <p>Estos términos regulan el uso de la aplicación TaPagado, ofrecida por Christopher Toledo, Chile (contacto: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>). Al instalar o usar TaPagado aceptas estos términos; si no estás de acuerdo, no uses la app. Si hay diferencias entre idiomas, vale la versión en español.</p>
+
+    <h2>1. Qué hace TaPagado</h2>
+    <p>TaPagado lee, en el celular del dueño del negocio, las notificaciones que envían las aplicaciones oficiales de los bancos y billeteras compatibles. Cuando una notificación indica que se recibió dinero, la anuncia en voz alta y la envía a los celulares o tablets de los trabajadores que el dueño aprobó.</p>
+
+    <h2>2. TaPagado depende del aviso del banco</h2>
+    <p><strong>TaPagado no se conecta a los bancos, no accede a las cuentas ni a sus claves, y no realiza ni confirma transferencias por sí misma: solo informa lo que el banco notifica.</strong> Por eso su funcionamiento depende de que:</p>
+    <ul>
+      <li>el banco envíe la notificación al recibir dinero;</li>
+      <li>el dueño tenga activadas las notificaciones en la app del banco y en su celular, y haya dado a TaPagado el acceso a notificaciones;</li>
+      <li>el celular del dueño esté encendido y con internet, y el sistema no detenga la app para ahorrar batería;</li>
+      <li>el equipo del trabajador tenga internet y la app abierta. La versión actual anuncia los pagos con la pantalla encendida; si el equipo se bloquea, los pagos pendientes se anuncian al desbloquearlo.</li>
+    </ul>
+    <p>Los bancos pueden retrasar, cambiar o dejar de enviar sus notificaciones sin previo aviso, y algunos celulares las retrasan. <strong>Ante cualquier duda o diferencia, el saldo y los movimientos que muestra la aplicación oficial del banco son los que valen.</strong> TaPagado es una ayuda para confirmar pagos más rápido y no reemplaza la revisión de la cuenta.</p>
+
+    <h2>3. Bancos y billeteras compatibles</h2>
+    <p>La lista se muestra en la app y puede cambiar. Que una institución sea "compatible" significa que TaPagado reconoce su app oficial; solo las marcadas como "probadas" se comprobaron con una transferencia real.</p>
+    <ul>
+      <li><strong>Probadas:</strong> Mercado Pago, Banco Falabella.</li>
+      <li><strong>Compatibles, prueba pendiente:</strong> BancoEstado, MACH.</li>
+      <li><strong>Compatibles, sin probar:</strong> Banco de Chile (y Edwards), Bci, Santander, Itaú, Scotiabank, Banco Consorcio, Banco Internacional, Banco Ripley, Banco Security, Bice, Tenpo, Coopeuch y Dale, Copec Pay, Global66, Prepago Los Héroes, Prex, Tapp Caja Los Andes, Tricot Prepago, Metro Muv y SumUp.</li>
+    </ul>
+    <p>TaPagado solo funciona en Android: el sistema del iPhone no permite leer notificaciones de otras apps.</p>
+
+    <h2>4. Responsabilidad del dueño del negocio</h2>
+    <p>El dueño decide qué bancos se leen y qué trabajadores aprueba, y puede quitarlos cuando quiera. Es responsable de usar la app con cuentas propias o que esté autorizado a administrar, de informar a sus trabajadores y clientes que usa TaPagado, y de cumplir las normas que le correspondan como comerciante.</p>
+
+    <h2>5. Uso permitido</h2>
+    <p>No puedes usar TaPagado para leer notificaciones de cuentas ajenas sin autorización, para engañar a terceros, ni copiar, modificar, revender o descompilar la app, salvo en lo que la ley te permita expresamente.</p>
+
+    <h2>6. Precio</h2>
+    <p>Durante la etapa de prueba TaPagado es gratuita. Si más adelante se cobra una suscripción, el precio y sus condiciones se mostrarán en Google Play antes de pagar, y las compras se regirán por las políticas de Google Play.</p>
+
+    <h2>7. Sin garantías</h2>
+    <p>TaPagado se ofrece "tal cual" y "según disponibilidad". No garantizamos que reciba o anuncie todos los pagos, que lo haga en un tiempo determinado, ni que lea correctamente el monto o el nombre en todos los casos, porque depende del texto que escribe cada banco.</p>
+
+    <h2>8. Límite de responsabilidad</h2>
+    <p>Hasta donde la ley lo permita, el titular de TaPagado no responde por pagos no anunciados, anunciados con retraso o con datos incorrectos, por ventas entregadas sin verificar el pago en el banco, ni por daños indirectos derivados del uso de la app. En cualquier caso, la responsabilidad total queda limitada a lo que hayas pagado por TaPagado en los 12 meses anteriores al hecho. Este límite no se aplica en casos de dolo o culpa grave, ni afecta los derechos que la ley te reconoce como consumidor y a los que no puedes renunciar.</p>
+
+    <h2>9. Cambios</h2>
+    <p>Podemos actualizar la app, agregar o quitar bancos y funciones, o dejar de ofrecerla. Si estos términos cambian, la nueva versión se publicará en esta página con su fecha; seguir usando la app después significa que la aceptas.</p>
+
+    <h2>10. Ley aplicable</h2>
+    <p>Estos términos se rigen por las leyes de Chile, sin perjuicio de las normas de protección al consumidor que correspondan.</p>
+
+    <h2>11. Contacto</h2>
+    <p>Dudas o reclamos: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Terms of use</h2>
+    <p class="muted">Effective: November 19, 2026 · <a href="./#en">Privacy policy</a></p>
+    <p>These terms govern the use of TaPagado, offered by Christopher Toledo, Chile (<a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>). By installing or using TaPagado you accept them. If the languages differ, the Spanish version prevails.</p>
+
+    <h2>1. What TaPagado does</h2>
+    <p>On the business owner's phone, TaPagado reads the notifications sent by the official apps of supported banks and wallets. When a notification says money was received, it announces it out loud and sends it to the devices of workers the owner approved.</p>
+
+    <h2>2. TaPagado depends on the bank's notification</h2>
+    <p><strong>TaPagado does not connect to banks, does not access accounts or passwords, and does not make or confirm transfers by itself: it only reports what the bank notifies.</strong> It works only if the bank sends the notification, notifications are enabled in the bank app and on the phone, the owner's phone is on and online, and the worker's device is online with the app open. Banks may delay, change or stop their notifications without notice. <strong>If in doubt, the balance and transactions shown in the bank's official app prevail.</strong></p>
+
+    <h2>3. Supported institutions</h2>
+    <p>The list is shown in the app and may change. Tested with a real transfer: Mercado Pago and Banco Falabella. Pending test: BancoEstado and MACH. Other listed banks and wallets are recognized but not yet tested. Android only.</p>
+
+    <h2>4. Owner's responsibility</h2>
+    <p>The owner chooses which banks are read and which workers are approved, must use accounts they own or are authorized to manage, and must inform workers and customers that TaPagado is used.</p>
+
+    <h2>5. Permitted use</h2>
+    <p>You may not use TaPagado to read notifications of accounts without authorization, to deceive others, or copy, modify, resell or decompile the app except as the law allows.</p>
+
+    <h2>6. Price</h2>
+    <p>TaPagado is free during the testing stage. Any future subscription will be shown and charged through Google Play.</p>
+
+    <h2>7. No warranty and limitation of liability</h2>
+    <p>TaPagado is provided "as is". We do not guarantee that every payment is received or announced, on time or with correct data. To the extent permitted by law, we are not liable for missed, late or incorrect announcements, goods delivered without checking the bank, or indirect damages; total liability is limited to what you paid for TaPagado in the previous 12 months. This does not affect your non-waivable consumer rights.</p>
+
+    <h2>8. Changes, law and contact</h2>
+    <p>Updated terms will be published on this page with their date. These terms are governed by Chilean law. Contact: <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
