@@ -71,7 +71,7 @@
     </ul>
 
     <h2>Qué datos se guardan en el celular</h2>
-    <p>En el celular del dueño: los últimos avisos de los bancos elegidos (hasta 300), los bancos elegidos, el nombre del negocio, tus ajustes de voz y la lista de apps que enviaron avisos (solo nombre y hora). En el equipo Avisador: el código del negocio, el nombre del equipo, el PIN del dueño para salir de ese modo y los ajustes de voz. Todo esto se borra al desinstalar la app, al borrar sus datos desde Ajustes de Android, o con el botón "Cambiar de modo".</p>
+    <p>En el celular del dueño: los últimos avisos de los bancos elegidos (hasta 300), los bancos elegidos, el nombre y el horario del negocio, tus ajustes de voz y la lista de apps que enviaron avisos (solo nombre y hora). En el equipo Avisador: el código del negocio, el nombre del equipo, el PIN del dueño para salir de ese modo y los ajustes de voz. Al usar "Cambiar de modo" en el celular del dueño, la app guarda en ese mismo celular una copia de la configuración del negocio para poder volver a ella ("Volver a mi negocio"). Todo esto se borra al desinstalar la app, al borrar sus datos desde Ajustes de Android, o con "Borrar mi negocio y mis datos".</p>
 
     <h2>Qué datos se suben a la nube</h2>
     <p>Para que los equipos Avisadores reciban los pagos, TaPagado usa <strong>Google Firebase</strong> (base de datos Firestore e inicio de sesión anónimo). No te pedimos nombre real, correo ni teléfono para usarla. Se guardan:</p>
@@ -79,7 +79,7 @@
       <li><strong>Negocio:</strong> un código de 6 caracteres, el nombre que le pusiste, un identificador anónimo del dueño, el horario de atención del local, la hora del último aviso del celular del dueño (solo dentro del horario) y la del último pago, y si ese día se acabaron los avisos gratis.</li>
       <li><strong>Código de vendedor (opcional):</strong> si un vendedor de TaPagado te visitó y escribes su código, se guarda en tu negocio para pagarle su comisión y aplicarte su descuento. También se guarda junto a tu compra en RevenueCat.</li>
       <li><strong>Avisadores:</strong> el nombre de cada equipo (por ejemplo "Caja 1" o "Repartidor Juan"), su identificador anónimo y si el dueño lo aprobó.</li>
-      <li><strong>Pagos recibidos:</strong> el banco o billetera, el título y el texto del aviso tal como lo escribe el banco (puede incluir el <strong>monto</strong>, el <strong>nombre de quien pagó</strong> y el banco de origen), y las horas en que el banco lo publicó, la app lo recibió y se subió.</li>
+      <li><strong>Pagos recibidos:</strong> el banco o billetera, el <strong>monto</strong> y, si el aviso del banco los trae, el <strong>nombre de quien pagó</strong> y el banco de origen, y las horas en que el banco lo publicó, la app lo recibió y se subió.</li>
     </ul>
     <p>Solo el dueño puede subir pagos, y solo los Avisadores que el dueño aprobó pueden verlos. Nadie puede modificarlos. TaPagado <strong>no</strong> recibe ni guarda claves bancarias, números de tarjeta, saldos ni movimientos de tu cuenta: solo lo que dice el aviso.</p>
     <p>Además, la app descarga de Firebase la lista actualizada de bancos y la forma en que cada uno escribe sus avisos, para seguir funcionando si un banco cambia sus textos.</p>
@@ -133,7 +133,7 @@
     </ul>
 
     <h2>What is stored on the device</h2>
-    <p>On the owner's phone: the latest notifications from the selected banks (up to 300), the selected banks, the business name, voice settings and the list of apps that sent notifications (name and time only). On the Avisador device: the business code, the device name, the owner's exit PIN and voice settings. This is deleted when you uninstall the app, clear its data in Android Settings, or tap "Cambiar de modo" (Change mode).</p>
+    <p>On the owner's phone: the latest notifications from the selected banks (up to 300), the selected banks, the business name and opening hours, voice settings and the list of apps that sent notifications (name and time only). On the Avisador device: the business code, the device name, the owner's exit PIN and voice settings. This is deleted when you uninstall the app, clear its data in Android Settings, or use "Borrar mi negocio y mis datos". When the owner taps "Cambiar de modo" (Change mode), the app keeps a copy of the business settings on that same phone so it can return to them ("Volver a mi negocio").</p>
 
     <h2>What is uploaded to the cloud</h2>
     <p>So the Avisador devices receive payments, TaPagado uses <strong>Google Firebase</strong> (Firestore database and anonymous sign-in). We do not ask for your real name, email or phone number. Stored data:</p>
@@ -141,7 +141,7 @@
       <li><strong>Business:</strong> a 6-character code, the name you gave it, an anonymous owner ID, and the time of the owner phone's last check-in and of the last payment.</li>
       <li><strong>Seller code (optional):</strong> if you enter the code of a TaPagado seller, it is stored with your business (to pay the seller commission and apply their discount) and with your purchase in RevenueCat.</li>
       <li><strong>Avisadores:</strong> the name of each device (e.g. "Caja 1"), its anonymous ID and whether the owner approved it. The business also stores its opening hours.</li>
-      <li><strong>Received payments:</strong> the bank or wallet, the notification title and text as written by the bank (it may include the <strong>amount</strong>, the <strong>payer's name</strong> and the originating bank), and the times the bank posted it, the app received it and it was uploaded.</li>
+      <li><strong>Received payments:</strong> the bank or wallet, the <strong>amount</strong> and, if the bank's notification includes them, the <strong>payer's name</strong> and the originating bank, and the times the bank posted it, the app received it and it was uploaded.</li>
     </ul>
     <p>Only the owner can upload payments and only Avisadores the owner approved can see them. Nobody can edit them. TaPagado does <strong>not</strong> receive or store bank passwords, card numbers, balances or account statements: only what the notification says.</p>
     <p>The app also downloads from Firebase the updated list of banks and how each one words its notifications.</p>
@@ -158,7 +158,7 @@
     <p>Data is stored on Google Cloud servers in Santiago, Chile (southamerica-west1). Google acts as TaPagado's processor under its <a href="https://firebase.google.com/terms/data-processing-terms">data processing terms</a>. RevenueCat (United States) processes purchase data, and Google's anonymous sign-in may be processed outside Chile. Payments and business data are kept while the business uses the app, or until you ask us to delete them.</p>
 
     <h2>How to request deletion</h2>
-    <p>To delete what is on your device: tap "Cambiar de modo", clear the app's data in Android Settings, or uninstall it. The owner can remove an Avisador with "Quitar". To delete the whole business and all its payments from the cloud, use Settings → Cuenta → "Borrar mi negocio y mis datos" in the owner's app (instant), or email <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a> with the subject "Delete my data" and include the business code. We will delete it within 30 days and confirm.</p>
+    <p>To delete what is on your device: use "Borrar mi negocio y mis datos" (owner) or "Cambiar de modo" (Avisador), clear the app's data in Android Settings, or uninstall it. The owner can remove an Avisador with "Quitar". To delete the whole business and all its payments from the cloud, use Settings → Cuenta → "Borrar mi negocio y mis datos" in the owner's app (instant), or email <a href="mailto:christopher.toledo.f@gmail.com">christopher.toledo.f@gmail.com</a> with the subject "Delete my data" and include the business code. We will delete it within 30 days and confirm.</p>
 
     <h2>Other permissions</h2>
     <p><strong>Internet:</strong> to send and receive payments through Firebase. <strong>App notifications and foreground service:</strong> for the persistent "TaPagado activo" notice that keeps the system from closing the app. <strong>Keep device awake:</strong> so the voice finishes speaking and the shop screen stays on while the app is open. <strong>Fingerprint or screen lock (optional):</strong> if the owner enables it, TaPagado asks for it on opening. Android performs the check; TaPagado never receives or stores your fingerprint. <strong>Camera (optional, Avisador device only):</strong> to read the owner phone's QR code when linking. The image is processed on the device and is neither stored nor sent. TaPagado does not use the microphone, location or contacts.</p>
